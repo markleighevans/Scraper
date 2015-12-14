@@ -69,7 +69,7 @@ try {
             System.out.println(DivVEDMOT.get(Iterator).asText());
             Iterator++;
         }
-        System.out.println(HtmlContent.toString());}
+        System.out.println(HtmlContent);}
 catch (IOException ioe)
 {
     System.out.println("Exception!");
