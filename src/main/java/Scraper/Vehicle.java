@@ -54,7 +54,8 @@ try {
         final HtmlPage ResultsPage = submitBtn.click();
 
         System.out.println(ResultsPage.getTitleText());
-        List<DomNode> DivAll = (List<DomNode>) ResultsPage.getByXPath("/html/body/form/div[7]/div/div/ul");
+
+    List<DomNode> DivAll = (List<DomNode>) ResultsPage.getByXPath("/html/body/form/div[7]/div/div/ul");
         int Iterator = 0;
         while (Iterator < DivAll.size()) {
             HtmlContent = DivAll.get(Iterator).asText();
@@ -64,7 +65,7 @@ try {
         List<DomNode> DivVEDMOT = (List<DomNode>) ResultsPage.getByXPath("/html/body/form/div[7]/div/div/div[2]");
         Iterator = 0;
         while (Iterator < DivVEDMOT.size()) {
-            System.out.println(DivVEDMOT.get(Iterator).asText());
+            HtmlContent += DivVEDMOT.get(Iterator).asText();
             Iterator++;
         }
         System.out.println(HtmlContent);}

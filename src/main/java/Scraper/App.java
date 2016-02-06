@@ -10,7 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+
         try
         {
             Vehicle.PopulateFromHTML("WF10EDK");
@@ -18,6 +18,6 @@ public class App
         catch(IOException IOE)
         {
 
-        };
+        }
     }
 }
